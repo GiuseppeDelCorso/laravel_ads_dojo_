@@ -2,6 +2,9 @@
 
 @section('content')
 <h1>Dati da config/data.js: {{ $home }}</h1>
-<p>This is my paragraph content.</p>
-<button class="btn btn-primary">Cliccami</button>
+<p>Home.blade.php</p>
+<a class="nav-link text-white {{ Route::currentRouteName() == 'modalpage' ? 'bg-secondary' : '' }}"
+        href="{{ route('modalpage') }}">
+        <i class="fa-solid fa-cart-arrow-down fa-lg fa-fw"></i> Pagina Modale Esericizo
+</a>
 @endsection

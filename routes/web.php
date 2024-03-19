@@ -17,3 +17,8 @@ Route::get('/', function () {
     $dati = config("data");
     return view('home', $dati);
 })->name("home");
+
+
+Route::get('/modalpage', function () {
+    return view('modalpage'); // Assicurati di avere un file blade chiamato 'modalpage.blade.php' nella tua cartella delle viste.
+})->name('modalpage');
